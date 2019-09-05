@@ -6,7 +6,7 @@ This repo aims to educate participants of the Betfair Brownlow Datathon on creat
 ## The Task
 This repo will outline how the Betfair Data Scientists went about modelling the AFL Brownlow for the 2018 season. The task is: to provide a prediction for the number of Brownlow Votes each player will receive in the 2019 AFL season. We have included a dataset named 'brownlow_datathon_data.csv' which contains player level data from the 2010 to 2019 AFL seasons. You are not required to use this data, however if you choose to use your own dataset, please ensure that the player names in your submission match the ones that we provided.
 
-The metric used to determine the winner will be the sum of [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error) over all predictions, based on the actual Brownlow votes received compared to predicted Brownlow Votes redeived. For example, the Betfair Data Scientists' Brownlow Model predicted Tom Mitchell to poll <img src="https://latex.codecogs.com/gif.latex?35.48" title="35.48" /> votes last season, while he only actually polled 28. Thus, the Mean Squared Error for this individual prediction would was <img src="https://latex.codecogs.com/gif.latex?(35.48&space;-&space;28)^2&space;=&space;56.04" title="(35.48 - 28)^2 = 56.04" />. On the other hand, if our model had correctly predicted <img src="https://latex.codecogs.com/gif.latex?28" title="28" /> votes, the mean squared error would have been <img src="https://latex.codecogs.com/gif.latex?0" title="0" />. The winner of the datathon will be the partcipant with the lowest total sum of Mean Squared Error over all predictions.
+The metric used to determine the winner will be the [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error) over all predictions, based on the actual Brownlow votes received compared to predicted Brownlow Votes redeived. For example, the Betfair Data Scientists' Brownlow Model predicted Tom Mitchell to poll <img src="https://latex.codecogs.com/gif.latex?35.48" title="35.48" /> votes last season, while he only actually polled 28. Thus, the Squared Error for this individual prediction would was <img src="https://latex.codecogs.com/gif.latex?(35.48&space;-&space;28)^2&space;=&space;56.04" title="(35.48 - 28)^2 = 56.04" />. On the other hand, if our model had correctly predicted <img src="https://latex.codecogs.com/gif.latex?28" title="28" /> votes, the Squared Error would have been <img src="https://latex.codecogs.com/gif.latex?0" title="0" />. The winner of the datathon will be the partcipant with the lowest Mean Squared Error over all predictions.
 
 For a detailed outline of the task, the prizes, and to sign up, click [here](https://www.betfair.com.au/hub/brownlow-medal-datathon/).
 
@@ -26,7 +26,7 @@ To read how we went about modelling the 2018 Brownlow, read [this](https://githu
 ## Submission
 To submit your model, email your final submission to datathon@betfair.com.au by 5.59pm AEST on 23 September 2019. Please rename the CSV to the unique player id you receive upon registering for the competition. Note that you don't need to email your code, just your predictions in the format that we have specified in the ‘Betfair Brownlow Datathon Submission.csv’. Any submissions that are not in the correct format will not be accepted.
 
-Submissions should include a prediction for the number of votes each player will receive. We will assume a prediction of <img src="https://latex.codecogs.com/gif.latex?0" title="0" /> votes for any missing values and Mean Squared Error will be calculated accordingly. Please ensure player names are in the specified format, otherwise we will be unable to find you prediction and, once again, we will assume a prediction of 0 votes. Here is an example of what a submission would have looked like for a sample of 20 players in the 2018 season...
+Submissions should include a prediction for the number of votes each player will receive. We will assume a prediction of <img src="https://latex.codecogs.com/gif.latex?0" title="0" /> votes for any missing values and Mean Squared Error will be calculated accordingly. Please ensure player names are in the specified format, otherwise we will be unable to find you prediction and, once again, we will assume a prediction of 0 votes. Here is an example of what a submission would have looked like for a sample of 25 players in the 2018 season...
 
 ### Team_Betfair.csv
 | PLAYER | PREDICTION |
@@ -60,7 +60,7 @@ Submissions should include a prediction for the number of votes each player will
 And here is how this sample would have been scored...
 
 ### Team_Betfair_MSE.csv
-| PLAYER | PREDICTION | ACTUAL | MSE |
+| PLAYER | PREDICTION | ACTUAL | SE |
 | - | - | - | - | 
 | T Mitchell | 35.484614 | 28 | 56.01944673 |
 | M Gawn | 21.544278 | 20 | 2.384794541 |
@@ -88,7 +88,7 @@ And here is how this sample would have been scored...
 | J Kelly | 11.982157 | 10 | 3.928946373 |
 | C Ward | 11.892443 | 13 | 1.226682508 |
 | - | - | - | - | 			
-| Total MSE | - | - | 527.3474871 |
+| MSE | - | - | 21.09389949 |
 
 If you are happy to read through the Python tutorials on Github, but not run the code yourself, you can click [here](https://github.com/betfair-datascientists/predictive-models/blob/master/brownlow/Betfair%20Data%20Scientists'%20Brownlow%20Model.ipynb). If you are keen to try and run the code yourself and try different things out, you will need to install the following:
 
