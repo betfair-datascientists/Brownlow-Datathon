@@ -98,3 +98,9 @@ If you don't already have Python installed, we advise you to install it through 
 
 ## Disclaimer
 Note that whilst predictions are fun and rewarding to create, we can't promise that your betting strategy will be profitable. If implementing your own strategies please gamble responsibly and note that you are responsible for any winnings/losses incurred.
+
+## FAQs:
+
+- some of the players are missing. i.e. there is only one listing of A Brayshaw, when there should be two Brayshaws.
+
+Player names are in the format {firstname initial}{surname} as some small merging of datasets was required to create the dataset for this competition. This means some players with identical names are not uniquely identifed. Don't worry about providing a submission for these players; you can provide a prediction or no prediction at all and you will not be penalised. However, do not make changes to the submission file to try and distinguish between these players.
