@@ -8,7 +8,7 @@ This repo will outline how the Betfair Data Scientists went about modelling the 
 
 The metric used to determine the winner will be the [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error) over all predictions, based on the actual Brownlow votes received compared to predicted Brownlow Votes redeived. For example, the Betfair Data Scientists' Brownlow Model predicted Tom Mitchell to poll <img src="https://latex.codecogs.com/gif.latex?35.48" title="35.48" /> votes last season, while he only actually polled 28. Thus, the Squared Error for this individual prediction would was <img src="https://latex.codecogs.com/gif.latex?(35.48&space;-&space;28)^2&space;=&space;56.04" title="(35.48 - 28)^2 = 56.04" />. On the other hand, if our model had correctly predicted <img src="https://latex.codecogs.com/gif.latex?28" title="28" /> votes, the Squared Error would have been <img src="https://latex.codecogs.com/gif.latex?0" title="0" />. The winner of the datathon will be the partcipant with the lowest Mean Squared Error over all predictions.
 
-For a detailed outline of the task, the prizes, and to sign up, click [here](https://www.betfair.com.au/hub/brownlow-medal-datathon/).
+For a detailed outline of the task, the prizes, and to sign up, click [here](https://www.betfair.com.au/hub/betfairs-brownlow-medal-datathon/).
 
 To read how we went about modelling the 2018 Brownlow, read [this](https://github.com/betfair-datascientists/predictive-models/tree/master/brownlow).
 
