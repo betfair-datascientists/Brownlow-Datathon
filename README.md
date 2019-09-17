@@ -24,7 +24,7 @@ To read how we went about modelling the 2018 Brownlow, read [this](https://githu
 | Total         | $5100         |   
 
 ## Submission
-To submit your model, email your final submission to datathon@betfair.com.au by 5.59pm AEST on 23 September 2019. Please rename the CSV to the unique player id you receive upon registering for the competition. Note that you don't need to email your code, just your predictions in the format that we have specified in the ‘Betfair Brownlow Datathon Submission.csv’. Any submissions that are not in the correct format will not be accepted.
+To submit your model, email your final submission to datathon@betfair.com.au by 5.59pm AEST on 23 September 2019. Please rename the CSV to what you would like to call your model (this could be displayed on a leaderboard). Note that you don't need to email your code, just your predictions in the format that we have specified in the ‘Betfair Brownlow Datathon Submission.csv’. Any submissions that are not in the correct format will not be accepted.
 
 Submissions should include a prediction for the number of votes each player will receive. We will assume a prediction of <img src="https://latex.codecogs.com/gif.latex?0" title="0" /> votes for any missing values and Mean Squared Error will be calculated accordingly. Please ensure player names are in the specified format, otherwise we will be unable to find you prediction and, once again, we will assume a prediction of 0 votes. Here is an example of what a submission would have looked like for a sample of 25 players in the 2018 season...
 
