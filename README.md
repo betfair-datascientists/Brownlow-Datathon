@@ -1,3 +1,15 @@
+# Post Betfair Australia Brownlow Datathon 
+
+"leaderboard.csv" has been uploaded which contains contestants final MSE scores. A dashboard containing visualizations of the competition as well as the Betfair market just before the start of polling has also been added. There are two ways to view the dashboard.
+
+1. 
+clone the repository onto your local computer and open the html file.
+
+2. 
+- open the "Betfair Datathon Recap.html" file in the repository and click "view raw".
+- right click and save as a ".html" file.
+you should then be able to open the saved file in your web browser.
+
 # Betfair Australia Brownlow Datathon
 
 ## Aim
